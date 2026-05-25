@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Downloader Settings</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">X Downloader</div>
+
+        <div class="option-group" id="option-direct">
+            <label class="checkbox-container">
+                <input type="radio" name="mode" id="cb-direct">
+                <span class="checkmark"></span>
+                Download straight to the Downloads folder
+            </label>
+        </div>
+
+        <div class="option-group" id="option-subfolder">
+            <label class="checkbox-container">
+                <input type="radio" name="mode" id="cb-subfolder">
+                <span class="checkmark"></span>
+                Download to a certain folder in Downloads
+            </label>
+            <div class="subfolder-input-wrapper">
+                <label for="input-foldername" class="sub-label">Folder's name</label>
+                <input type="text" id="input-foldername" class="text-input" placeholder="e.g., TwitterMedia">
+            </div>
+        </div>
+
+        <div class="option-group" id="option-saveas">
+            <label class="checkbox-container">
+                <input type="radio" name="mode" id="cb-saveas">
+                <span class="checkmark"></span>
+                Save As
+            </label>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 15px;
+    width: 320px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: opacity 0.2s;
+}
+
+.option-group.disabled {
+    opacity: 0.5;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+}
+
+.subfolder-input-wrapper {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub-label {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.text-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.text-input:focus {
+    border-color: #1d9bf0;
+}
