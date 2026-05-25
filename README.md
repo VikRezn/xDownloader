@@ -1,8 +1,8 @@
 # X Media Downloader
 A Chrome extension that adds a button to download original quality photos and videos directly from X (Twitter).
 
-https://github.com/user-attachments/assets/f260b795-5568-404a-887d-bec0206b7b79
-https://github.com/user-attachments/assets/b256b13f-7f90-4e16-aad1-01815bc1127c
+![Download Button UI](https://github.com/user-attachments/assets/f260b795-5568-404a-887d-bec0206b7b79)
+![Media Picker UI](https://github.com/user-attachments/assets/b256b13f-7f90-4e16-aad1-01815bc1127c)
 
 ## Features
 * **Native Integration:** Injects a download button directly into the tweet action bar.
