@@ -24,7 +24,6 @@ A Chrome extension that adds a button to download original quality photos and vi
 
 <div dir="rtl">
 
-# X Media Downloader
 إضافة كروم تضيف زر لتحميل الصور والفيديوهات بأعلى جودة مباشرة من X (تويتر).
 
 ## المميزات
